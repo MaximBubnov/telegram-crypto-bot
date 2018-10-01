@@ -22,7 +22,7 @@ public interface Constant {
             "ada : Cardano" + "\n" +
             "xmr : Monero" + "\n" +
             "_____________________________________" + "\n" +
-            "Bot`s command:" + "\n" +
+            "Bot commands:" + "\n" +
             "/all: Get info about all cryptocoinz" + "\n" +
             "/get N: Get list cryptocoinz info of size N " + "\n" +
             "_____________________________________" + "\n" +
