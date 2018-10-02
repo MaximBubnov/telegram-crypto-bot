@@ -23,8 +23,10 @@ public interface Constant {
             "xmr : Monero" + "\n" +
             "_____________________________________" + "\n" +
             "Bots commands:" + "\n" +
-            "/all: Get info about all cryptocoinz" + "\n" +
-            "/get N: Get list cryptocoinz info of size N " + "\n" +
+            "/all: Get info about main cryptocoinz" + "\n" +
+            "/getN: Get top-list currency cryptocoinz info of size N " + "\n" +
+            "For example /get2" + "\n" +
             "_____________________________________" + "\n" +
-            "   Thanks. Good wishes!";
+            "Thanks. " + "\n" +
+            "Created by @max_bubnov";
 }

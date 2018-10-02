@@ -21,10 +21,7 @@ import static request.util.GettingStringFromJson.getStringFromJsonArray;
 
 public class GetNCoins{
 
-    public static List<Coin> run() throws IOException, ParseException {
-
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String s = reader.readLine();
+    public static List<Coin> run(String s) throws IOException, ParseException {
 
         String url = String.format(Constant.GET_N_COUNT, s);
 
