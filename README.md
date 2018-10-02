@@ -10,14 +10,23 @@
 
 ### Screenshots
 
-###### 1
-![alt-текст](https://github.com/MaximBubnov/telegram-crypto-bot/blob/master/botscreen/all.jpg "главная страница")
+###### Start
+![alt-текст](https://github.com/MaximBubnov/telegram-crypto-bot/blob/master/botscreen/start.jpg "главная страница")
 <hr>
 
-###### 2
+###### Commands
 ![alt-текст](https://github.com/MaximBubnov/telegram-crypto-bot/blob/master/botscreen/error.jpg "главная страница")
 <hr>
 
-###### 3
+###### Get one
 ![alt-текст](https://github.com/MaximBubnov/telegram-crypto-bot/blob/master/botscreen/one.jpg "главная страница")
 <hr>
+
+###### Get all list
+![alt-текст](https://github.com/MaximBubnov/telegram-crypto-bot/blob/master/botscreen/all.jpg "главная страница")
+<hr>
+
+###### Get N size list
+![alt-текст](https://github.com/MaximBubnov/telegram-crypto-bot/blob/master/botscreen/get2.jpg "главная страница")
+<hr>
+
