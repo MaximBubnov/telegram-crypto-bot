@@ -24,7 +24,7 @@ public class MyFirstBot extends TelegramLongPollingBot {
 
         // We check if the update has a message and the message has text
         if (update.hasMessage() && update.getMessage().hasText()) {
-            // Set variables
+
             long chat_id = update.getMessage().getChatId();
             String message_text = update.getMessage().getText();
             String user_username = update.getMessage().getChat().getUserName();
