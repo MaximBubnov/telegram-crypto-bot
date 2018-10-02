@@ -1,5 +1,6 @@
 package bot;
 
+import com.vdurmont.emoji.EmojiParser;
 import org.apache.log4j.Logger;
 import org.json.simple.parser.ParseException;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -27,9 +28,12 @@ public class MyFirstBot extends TelegramLongPollingBot {
 
             long chat_id = update.getMessage().getChatId();
             String message_text = update.getMessage().getText();
-            String user_username = update.getMessage().getChat().getUserName();
 
+            String user_username = update.getMessage().getChat().getUserName();
             String user_first_name = update.getMessage().getChat().getFirstName();
+
+            String emojiSmile = EmojiParser.parseToUnicode(":smile:" + ":smile:" + ":smile:");
+            String emojiAlien = EmojiParser.parseToUnicode(":alien:");
 
             if(message_text.contains("/get")) {
                 String count = message_text.replaceAll("/get", "").trim();
@@ -61,14 +65,14 @@ public class MyFirstBot extends TelegramLongPollingBot {
 
                 SendMessage message = new SendMessage() // Create a message object object
                         .setChatId(chat_id)
-                        .setText("Hello, " + user_first_name + "!" + "\n" +
+                        .setText("Hello, " + user_first_name + "!" + emojiAlien + "\n" +
                                 "Welcome to Crypto Currency bot-chat." + "\n" +
                                 "Here you can get info about crypto currency in real time." + "\n" +
                                 "To start writing a some string." + "\n"+
                                 "For example /love" + "\n" + "\n" +
                                 "If you have some problems. Please!" + "\n" +
                                 "Write me @max_bubnov" + "\n" + "\n" +
-                                "Thanks. Good luck!" + "\n" +
+                                "Thanks. Good luck! " + emojiSmile + "\n" +
                                 "Created by ©Maxim Bubnov");
 
                 try {
@@ -117,6 +121,7 @@ public class MyFirstBot extends TelegramLongPollingBot {
                         Coin coin = GetOneCoin.run(message_text);
 
                         String answer = String.format(
+                                user_first_name + ", bro! Special for you!" + emojiAlien + "\n" + "\n" +
                                 "Name : %s" + "\n" +
                                         "Symbol: %s" + "\n" +
                                         "USD $: %s" + "\n" +
