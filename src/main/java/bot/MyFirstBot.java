@@ -50,6 +50,7 @@ public class MyFirstBot extends TelegramLongPollingBot {
 
                     try {
                         execute(message); // Sending our message object to user
+                        log.info(user_username + " | send message | " + message_text);
                     } catch (TelegramApiException e) {
                         e.printStackTrace();
                     }
@@ -78,6 +79,7 @@ public class MyFirstBot extends TelegramLongPollingBot {
                 try {
                     execute(message); // Sending our message object to user
                     log.info("User join : " + user_username);
+                    log.info(user_username + " | send message | " + message_text);
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -95,6 +97,7 @@ public class MyFirstBot extends TelegramLongPollingBot {
 
                     try {
                         execute(message); // Sending our message object to user
+                        log.info(user_username + " | send message | " + message_text);
                     } catch (TelegramApiException e) {
                         e.printStackTrace();
                     }
@@ -112,6 +115,7 @@ public class MyFirstBot extends TelegramLongPollingBot {
 
                     try {
                         execute(message); // Sending our message object to user
+                        log.info(user_username + " | send message | " + message_text);
                     } catch (TelegramApiException e) {
                         e.printStackTrace();
                     }
@@ -134,6 +138,7 @@ public class MyFirstBot extends TelegramLongPollingBot {
 
                         try {
                             execute(message); // Sending our message object to user
+                            log.info(user_username + " | send message | " + message_text);
                         } catch (TelegramApiException e) {
                             e.printStackTrace();
                         }
